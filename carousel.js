@@ -34,16 +34,12 @@ $(document).ready(function() {
     , $transition_time +  $time_between_slides
   );
 
-  // gestion du click sur les button
+  // gestion du click sur les 'button'
 
-  //let $carrousel = $('.slider ul'), // on cible le bloc du carrousel
   let $slideli = $('li');
   let indexSlide = $slideli.length - 1; // on définit l'index du dernier élément
   let i = 0; // on initialise un compteur
   let $currentSlide = slides().eq(i); // enfin, on cible l'image courante, qui possède l'index i (0 pour l'instant)
-
-  //$img.css('display', 'none'); // on cache les images
-  //$currentImg.css('display', 'block'); // on affiche seulement l'image courante
 
   $('.button-right').click(function(){ // img suivante
       i++;
@@ -56,7 +52,6 @@ $(document).ready(function() {
       else{
           i = indexSlide;
       }
-
   });
 
   $('.button-left').click(function(){ // img précédente
@@ -70,7 +65,5 @@ $(document).ready(function() {
       else{
           i = 0;
       }
-
   });
-
 });
