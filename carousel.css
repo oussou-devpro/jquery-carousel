@@ -1,0 +1,27 @@
+.slider {
+  margin: 10px auto;
+  width: 700px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider li {
+  display: none;
+  position: absolute;
+  top: auto;
+  left: 0;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+.button-left, .button-right {
+	margin-top: 150px;
+}
+
+.button-left span:hover, .button-right span:hover {
+	cursor: pointer;
+}
